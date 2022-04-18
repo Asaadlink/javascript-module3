@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(230, 190, 190);
+    
+}
+
+#root {
+    display: flex;
+}
+
+#sidebar {
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    line-height: 2rem;
+    color: green;
+    cursor: pointer;
+    font-weight: 900;
+    background-color: rgb(233, 218, 218);
+    
+}
+
+#main-area {
+    padding-left: 120px;
+    padding-top: 50px;
+    color: purple;
+    text-align: center;
+    align-items: center;
+}
+
+
+.character-card {   
+    display: inline-grid;
+    
+}
+
+#main-area img {
+    border-radius: 1300px;
+    padding: 20px;
+    max-width: 200px;
+}
+
+#sidebar p{
+    min-width: 100px;
+}
