@@ -43,7 +43,7 @@
 
 // Create the Person class
 class Person {
-    irstName;
+    firstName;
     lastName;
     constructor(firstName, lastName) {
       this.firstName = firstName;
