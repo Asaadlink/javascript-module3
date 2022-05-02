@@ -28,6 +28,7 @@ describe("06-exercises", () => {
     // Finish the test
     function callback(result) {
       expect(result).toBe(10);
+      done();
     }
   });
 
@@ -48,6 +49,13 @@ describe("06-exercises", () => {
     expect.assertions(1);
 
     // Finish the test
+    fetchUserOK(userID)
+.then(
+  result => {
+    expect(result).toEqual(expectedUser);
+    done();
+  }
+)
   });
 
   /**
@@ -69,5 +77,9 @@ describe("06-exercises", () => {
     expect.assertions(1);
 
     // Finish the test
+    fetchUserFail(userID)
+    .catch(rejectedMessage =>{
+    expect(rejectedMessage).toEqual(expectedMessage);
+    done();
   });
 });
