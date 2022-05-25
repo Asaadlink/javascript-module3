@@ -19,17 +19,17 @@
  */
 
 // Finish the code of the function
-function exercise18() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
-    const jsonBody = await response.json();
-    displayContents(jsonBody);
-}
-
-// Don’t change the code bellow this line
-function displayContents(data) {
-    const wrapper = document.querySelector(".ex-wrapper");
-
-    wrapper.textContent = JSON.stringify(data, null, 2);
-}
-
-export default exercise18;
+async function exercise18() {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+     const jsonbody  = await response.json();
+     displayContents(jsonbody)
+  }
+  
+  // Don’t change the code bellow this line
+  function displayContents(data) {
+      const wrapper = document.querySelector(".ex-wrapper");
+  
+      wrapper.textContent = JSON.stringify(data, null, 2);
+  }
+  
+  export default exercise18;
